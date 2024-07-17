@@ -1,1 +1,65 @@
-sd
+<!DOCTYPE html>
+<html>
+<head>
+  <title>smart farm</title>
+  <style>
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 20px; /* Adjust the gap between items */
+    }
+    .sensor {
+      flex-basis: 30%; /* Adjust the width of each sensor */
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    /* Define styles for larger screens where we want to reorder */
+    @media (min-width: 600px) {
+      .sensor:nth-child(4), .sensor:nth-child(5) {
+        order: -2; /* Move these sensors to the beginning */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sensor">
+    <h1>조도센서</h1>
+    <img src="C:\Users\82105_n80nr\Desktop\전구.jpeg" width="200" height="200">
+    <p> 빛이 감지 되었을때 : </p>
+  </div>
+
+  <div class="sensor">
+    <h2>물수위센서</h2>
+    <img src="C:\Users\82105_n80nr\Desktop\물.jpeg" width="200" height="200">
+    <p> 물이 감지 되었을때 : </p>
+  </div>
+
+  <div class="sensor">
+    <h3>토양수분센서</h3>
+    <img src="C:\Users\82105_n80nr\Desktop\흙.jpeg" width="200" height="200">
+    <p> 흙이 감지 되었을때 : </p>
+  </div>
+  
+  <div class="sensor">
+    <h4>온습도센서</h4>
+    <img src="C:\Users\82105_n80nr\Desktop\온습도.png" width="200" height="200">
+    <p> 감지 되었을때 : </p>
+  </div>
+  
+  <div class="sensor">
+    <h5>모터구동</h5>
+    <img src="C:\Users\82105_n80nr\Desktop\농장.jpg" width="200" height="200">
+    <p> 흙이 감지 되었을때 : </p>
+  </div>
+
+</body>
+</html>
+
+
